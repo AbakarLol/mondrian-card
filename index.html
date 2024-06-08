@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .piet{
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px black solid;
+      height: 95vh;
+      flex-basis: 60%;
+      box-shadow:   -4px 2px 4px 4px gray;
+      
+
+      
+    }
+
+    .container{
+
+      margin-top: 2%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+      grid-template-rows: repeat(21, 1fr) ;
+      gap : 10px;
+      background-color: black;
+      border: black solid 10px; 
+      height: 100%;
+      width: 70%;
+      border-bottom: 6px solid;
+    }
+    .bleu{
+      
+      background-color: #004592 ;
+    }
+    .yellow{
+      background-color: #F9D01E ;
+    }
+    .red{
+      background-color: #E72F24 ;
+    }
+    .white{
+      background-color: #F0F1EC ;
+    }
+
+    .b1{
+      grid-area: 1 / 1 /  6 / 6;
+      
+    }
+    .b2{
+      grid-area: 10 / 7 / 15 / 17 ;
+    }
+    .y1{
+      grid-area: 1 / 6 /  6 / 8;
+    }
+    .y2{
+      grid-area: 10 / 1 / 22 / 7 ;
+    }
+    .r1{ 
+      grid-area: 6 / 1 / 10 / 8 ;
+    }
+    .r2{
+    
+      grid-area: 10 / 17 / 22 / 22;
+    }
+    .w1{ 
+      grid-area: 1 / 8 /  10 / 22;
+    }
+    .w2{
+      grid-area: 15 / 7 / 22 / 17 ;
+      
+
+    }
+    h1{
+      
+      font-family: "Josefin Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 3rem;
+    
+  }
+
+    h2{
+      font-family: "Cactus Classical Serif", serif;
+      font-weight: 700;
+      font-style: normal;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      text-align: center;
+
+
+  }
+  @media (max-width : 600px){
+
+  }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,669;1,669&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="main">
+   <div class="piet">
+    <div class="card container">
+      <div class="bleu b1"></div>
+      <div class="yellow y1"></div>
+      <div class="red r1"></div>
+      <div class="white w1"></div>
+      <div class="yellow y2"></div>
+      <div class="bleu b2"></div>
+      <div class="white w2"></div>
+      <div class="red r2"></div>
+    </div>
+    <div class="card-label">
+      <h1> Mondrian </h1>
+      <h2> Inspired Card </h2>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
